@@ -95,15 +95,15 @@ Pod::Spec.new do |spec|
   # spec.exclude_files = "Classes/Exclude"
 
     spec.subspec 'BaseFile' do |baseFile|
-    baseFile.sorce_files = 'KNetWorkRequestTool/Classes/BaseFile/**/*'
+    baseFile.sorce_files = 'Classes/BaseFile/**/*'
     end
 
     spec.subspec 'Category' do |category|
-    category.source_files = 'KNetWorkRequestTool/Classes/Category/**/*'
+    category.source_files = 'Classes/Category/**/*'
     end
 
     spec.subspec 'Tool' do |tool|
-    tool.source_files = 'KNetWorkRequestTool/Classes/Tool/**/*'
+    tool.source_files = 'Classes/Tool/**/*'
     end
 
   # spec.public_header_files = "Classes/**/*.h"

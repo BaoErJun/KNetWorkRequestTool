@@ -96,11 +96,9 @@ Pod::Spec.new do |spec|
 
     spec.subspec 'BaseFile' |baseFile|
     baseFile.sorce_files = 'KNetWorkRequestTool/Classes/BaseFile/**/*'
-    end
 
     spec.subspec 'Category' |category|
     category.source_files = 'KNetWorkRequestTool/Classes/Category/**/*'
-    end
 
     spec.subspec 'Tool' |tool|
     tool.source_files = 'KNetWorkRequestTool/Classes/Tool/**/*'

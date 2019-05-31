@@ -91,8 +91,17 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # spec.exclude_files = "Classes/Exclude"
+
+    spec.subspec 'BaseFile' |baseFile|
+    baseFile.sorce_files = 'KNetWorkRequestTool/Classes/BaseFile/**/*'
+
+    spec.subspec 'Category' |category|
+    category.source_files = 'KNetWorkRequestTool/Classes/Category/**/*'
+
+    spec.subspec 'Tool' |tool|
+    tool.source_files = 'KNetWorkRequestTool/Classes/Tool/**/*'
 
   # spec.public_header_files = "Classes/**/*.h"
 
